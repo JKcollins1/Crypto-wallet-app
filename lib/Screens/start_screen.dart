@@ -8,11 +8,16 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return  const SafeArea(
       child: Scaffold(
-        backgroundColor:const Color(0xFFF4F4F4),
-        body: ListView(
-          children: const [FirstContainer(), SecondContainer(), ThirdContainer()],
+        backgroundColor:Color(0xFFF4F4F4),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              FirstContainer(),
+              SecondContainer(),
+              ThirdContainer()],
+          ),
         ),
       ),
     );

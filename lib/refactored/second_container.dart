@@ -54,39 +54,41 @@ class SecondContainer extends StatelessWidget {
               decoration: BoxDecoration(color: Colors.white,
               borderRadius: BorderRadius.circular(60)
             ),
-              child: ListView(scrollDirection: Axis.horizontal,
-                 children: const [
-                Padding(
-                  padding: EdgeInsets.all(7),
-                  child: CircleAvatar(
-                    radius: 40,
-                    backgroundColor: Color(0xFFF2F2F2),
-                    child: Icon(Icons.add),
+              child: const SingleChildScrollView(scrollDirection: Axis.horizontal,
+                child: Row(
+                   children: [
+                  Padding(
+                    padding: EdgeInsets.all(7),
+                    child: CircleAvatar(
+                      radius: 40,
+                      backgroundColor: Color(0xFFF2F2F2),
+                      child: Icon(Icons.add),
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(7),
-                  child: CircleAvatar(
-                    radius: 40,
-                    backgroundImage: AssetImage("assets/pc1.png"),
+                  Padding(
+                    padding: EdgeInsets.all(7),
+                    child: CircleAvatar(
+                      radius: 40,
+                      backgroundImage: AssetImage("assets/pc1.png"),
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(4),
-                  child: CircleAvatar(
-                    radius: 40,
-                    backgroundImage: AssetImage("assets/pc2.png"),
+                  Padding(
+                    padding: EdgeInsets.all(4),
+                    child: CircleAvatar(
+                      radius: 40,
+                      backgroundImage: AssetImage("assets/pc2.png"),
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(7),
-                  child: CircleAvatar(
-                    radius: 40,
-                    backgroundImage: AssetImage("assets/pc.png"),
+                  Padding(
+                    padding: EdgeInsets.all(7),
+                    child: CircleAvatar(
+                      radius: 40,
+                      backgroundImage: AssetImage("assets/pc.png"),
+                    ),
                   ),
-                ),
-                  ],
-                ),
+                    ],
+                  ),
+              ),
             ),
             ],
           ),
